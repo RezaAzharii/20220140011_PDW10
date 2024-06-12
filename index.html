@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Peminatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <header>Formulir Pendaftaran Peminatan</header>
+    <form action="#" class="form" id="pendaftaranForm">
+      <div class="input-box">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukan Nama Lengkap" id="nama">
+      </div>
+      <div class="input-box">
+        <label>NIM</label>
+        <input type="text" placeholder="Masukan NIM Lengkap" id="nim">
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Angkatan</label>
+          <div class="select-box">
+            <select class="pilihan" id="angkatan">
+              <option value="">Angkatan</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label>Tanggal Lahir</label>
+          <input type="date" id="tanggal">
+        </div>
+      </div>
+
+      <div class="penjurusan-box">
+        <h3>Peminatan :</h3>
+        <div class="jurusan-option">
+          <div class="jurusan">
+            <input type="radio" id="check-programming" name="jurusan" value="Programming">
+            <label for="check-programming">Programming</label>
+          </div>
+          <div class="jurusan">
+            <input type="radio" id="check-desain" name="jurusan" value="Desain">
+            <label for="check-desain">Desain</label>
+          </div>
+          <div class="jurusan">
+            <input type="radio" id="check-jaringan" name="jurusan" value="Jaringan">
+            <label for="check-jaringan">Jaringan</label>
+          </div>
+          <div class="jurusan">
+            <input type="radio" id="check-data" name="jurusan" value="Data">
+            <label for="check-data">Data</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label>Alamat</label>
+        <input type="text" placeholder="Masukan Alamat Anda" id="alamat">
+      </div>
+
+      <button type="submit" onclick="SubmitData()">Submit</button>
+    </form>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
